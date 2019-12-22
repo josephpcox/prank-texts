@@ -23,7 +23,7 @@ class PrankTexts(Resource):
         while count > 0:
             requests.post(os.environ['TILL_URL'], json={
                 "phone": [requested_data['phone']],
-                "text": "You have a perminant virus on your phone, you will need to buy a new phone!"
+                "text": requested_data['msg']
             })
             count = count-1
             return 200
