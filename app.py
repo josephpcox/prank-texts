@@ -13,7 +13,7 @@ class PrankTexts(Resource):
     def post(self):
         parser = reqparse.RequestParser()
         parser.add_argument(
-            'key', typ=str, help='Api key is required for this operation.', required=True)
+            'key', type=str, help='Api key is required for this operation.', required=True)
         parser.add_argument(
             'phone', type=str, help='phone number is a rewuired field.', required=True)
         parser.add_argument(
