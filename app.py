@@ -7,11 +7,7 @@ api = Api(app)
 
 class PrankTexts(Resource):
     def get(self):
-        try:
-            return {'Prank Texts': 'Active'}
-
-        except:
-            return {'Prank Texts': 'Inactive'}
+        return {'Prank Texts': 'Active'}
 
     def post(self):
         parser = reqparse.RequestParser()
