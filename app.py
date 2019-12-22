@@ -26,7 +26,7 @@ class PrankTexts(Resource):
                 "text": requested_data['msg']
             })
             count = count-1
-            return 200
+        return 200
 
 
 api.add_resource(PrankTexts, '/prank')
