@@ -1,6 +1,7 @@
 from flask import Flask, jsonify
-from flask_restful import Resource, Api, reqparse,requests
+from flask_restful import Resource, Api, reqparse
 import os
+import requests
 app = Flask(__name__)
 api = Api(app)
 
